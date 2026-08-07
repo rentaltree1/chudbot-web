@@ -21,7 +21,7 @@ app.post('/api/chat', async (req, res) => {
         
         // Use flash model as requested in the UI dropdown
         const model = genAI.getGenerativeModel({ 
-            model: 'gemini-1.5-flash',
+            model: 'gemini-3.1-flash-lite',
             systemInstruction: "Your name is ChudBot. You are a helpful, conversational AI assistant. Keep responses natural and concise."
         });
 
