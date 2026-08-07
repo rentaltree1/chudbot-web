@@ -8,30 +8,28 @@
 </head>
 <body>
     <div id="app-container">
-        <div class="header">
-            <div class="header-left">
-                <div class="logo">CB</div>
-                <div class="dropdown">
-                    <span id="current-model">1.5 ChudFlash</span>
-                    <span class="arrow">▼</span>
+        
+        <div class="sidebar">
+            <img src="logo.png" alt="CB" class="sidebar-logo" onerror="this.style.display='none'">
+            <div class="sidebar-spacer"></div>
+            <div class="sidebar-settings">⚙️</div>
+        </div>
+
+        <div class="main-content home-state" id="main-content">
+            
+            <div id="welcome-message">
+                <h1>Hi Human</h1>
+            </div>
+
+            <div id="chat-area"></div>
+
+            <div class="bottom-container">
+                <div class="input-area">
+                    <button class="add-btn">+</button>
+                    <input type="text" id="chat-input" autofocus autocomplete="off">
                 </div>
             </div>
-        </div>
 
-        <div id="chat-area">
-            <div id="empty-state">
-                <h2>How can I help you today?</h2>
-            </div>
-        </div>
-
-        <div class="bottom-container">
-            <div class="input-area">
-                <button class="icon-btn add-btn">+</button>
-                <input type="text" id="chat-input" placeholder="Message ChudBot..." autofocus>
-                <button class="icon-btn mic-btn">🎤</button>
-                <button class="icon-btn send-btn" id="send-btn">↑</button>
-            </div>
-            <div class="footer-text">ChudBot can make mistakes.</div>
         </div>
     </div>
     
