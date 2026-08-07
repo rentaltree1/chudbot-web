@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ChudBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <div class="header">
+            <div class="header-left">
+                <div class="logo">CB</div>
+                <div class="dropdown">
+                    <span id="current-model">1.5 ChudFlash</span>
+                    <span class="arrow">▼</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-area">
+            <div id="empty-state">
+                <h2>How can I help you today?</h2>
+            </div>
+        </div>
+
+        <div class="bottom-container">
+            <div class="input-area">
+                <button class="icon-btn add-btn">+</button>
+                <input type="text" id="chat-input" placeholder="Message ChudBot..." autofocus>
+                <button class="icon-btn mic-btn">🎤</button>
+                <button class="icon-btn send-btn" id="send-btn">↑</button>
+            </div>
+            <div class="footer-text">ChudBot can make mistakes.</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
