@@ -1,38 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ChudBot</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="app-container">
-        
-        <div class="sidebar">
-            <img src="logo.png" alt="CB" class="sidebar-logo" onerror="this.style.display='none'">
-            <div class="sidebar-spacer"></div>
-            <div class="sidebar-settings">⚙️</div>
-        </div>
-
-        <div class="main-content home-state" id="main-content">
-            
-            <div id="welcome-message">
-                <h1>Hi Human</h1>
-            </div>
-
-            <div id="chat-area"></div>
-
-            <div class="bottom-container">
-                <div class="input-area">
-                    <button class="add-btn">+</button>
-                    <input type="text" id="chat-input" autofocus autocomplete="off">
-                </div>
-            </div>
-
-        </div>
+<div class="chat-wrapper">
+  
+  <div class="chat-container">
+    <div class="message bot-message">
+      <span>ChudBot:</span> Hello!
     </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="message user-message">
+      <span>You:</span> Hey, testing the layout.
+    </div>
+  </div>
+
+  <div class="input-container">
+    <button class="add-btn">+</button>
+    <input type="text" placeholder="Type a message...">
+  </div>
+
+</div>
